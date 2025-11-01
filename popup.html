@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Next Azan</title>
+    <link rel="stylesheet" href="popup.css" />
+    <style>
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div style="display: flex; justify-content: space-between; align-items: center">
+            <div id="city"></div>
+            <span class="material-icons" style="cursor: pointer;" id="settings">⚙️</span>
+        </div>
+        <div id="next">
+            <div id="prayer-name"></div>
+            <div id="prayer-time"></div>
+        </div>
+        <div id="all-times"></div>
+        <!-- <div class="actions">
+      <button id="open-options">Change city</button>
+      <button id="refresh">Refresh</button>
+    </div> -->
+        <div style="text-align: center;">
+            <!-- <h3 style="margin: 0 0 8px;">Daily Timeline</h3> -->
+            <!-- <canvas id="azanCircle" width="250" height="100"></canvas>
+            <div id="azanTooltip" style="
+                position: absolute;
+                background: rgba(0,0,0,0.85);
+                color: #fff;
+                font-size: 10px;
+                padding: 4px 8px;
+                border-radius: 4px;
+                pointer-events: none;
+                opacity: 0;
+                transition: opacity 0.1s ease;
+                z-index: 10;
+                "></div> -->
+            <div id="azanContainer"></div>
+            <div id="azanTooltip" style="
+                position: fixed;
+                background: rgba(0,0,0,0.85);
+                color: #fff;
+                font-size: 11px;
+                padding: 4px 8px;
+                border-radius: 4px;
+                pointer-events: none;
+                opacity: 0;
+                transition: opacity 0.15s ease;
+                transform: translate(-50%, -100%);
+                z-index: 10000;
+                "></div>
+        </div>
+    </div>
+
+    <script src="praytime.js"></script>
+    <script src="helper.js"></script>
+    <script src="popup.js"></script>
+    <!-- <script type="module" src="popup.js"></script> -->
+
+</body>
+
+</html>

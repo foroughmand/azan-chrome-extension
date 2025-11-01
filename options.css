@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 12px;
+}
+
+label {
+    display: block;
+    margin: 8px 0 4px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+ul.suggestions {
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: white;
+    position: absolute;
+    width: calc(100% - 14px);
+    z-index: 10;
+}
+
+ul.suggestions li {
+    padding: 6px;
+    cursor: pointer;
+}
+
+ul.suggestions li:hover {
+    background: #f0f0f0;
+}
+
+button {
+    margin-top: 12px;
+    padding: 8px;
+    width: 100%;
+}

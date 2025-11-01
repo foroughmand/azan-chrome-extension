@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Azan Next Prayer",
+  "version": "0.1",
+  "description": "Show the next upcoming Azan (uses PrayTimes).",
+  "permissions": ["storage", "alarms"],
+  "host_permissions": [
+    "https://raw.githubusercontent.com/*",
+    "https://api.open-elevation.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Next Azan"
+  },
+  "options_page": "options.html",
+  "icons": {
+    "128": "icon-128.png"
+  },
+  "web_accessible_resources": [
+    {
+     "resources": ["praytime.js", "cities.json", "*.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

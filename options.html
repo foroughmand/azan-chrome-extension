@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Azan - Options</title>
+    <link rel="stylesheet" href="options.css" />
+    <style>
+    </style>
+</head>
+
+<body>
+    <h2>Choose City</h2>
+    <div id="container">
+        <label for="city-search">Search City</label>
+        <input type="text" id="city-search" placeholder="Type to search..." />
+        <ul class="suggestions" id="suggestions"></ul>
+
+        <h2>Calculation Method</h2>
+        <label for="method">Choose Method</label>
+        <select id="method">
+            <option value="MWL">Muslim World League (MWL)</option>
+            <option value="ISNA">Islamic Society of North America (ISNA)</option>
+            <option value="Egypt">Egyptian General Authority</option>
+            <option value="Makkah">Umm al-Qura University, Makkah</option>
+            <option value="Karachi">University of Islamic Sciences, Karachi</option>
+            <option value="Tehran">Institute of Geophysics, Tehran</option>
+            <option value="Jafari">Shia Ithna-Ashari (Jafari)</option>
+        </select>
+
+        <button id="save-btn">Save Configuration</button>
+        <button id="clear-btn">Clear</button>
+    </div>
+    <script src="helper.js"></script>
+    <script src="options.js"></script>
+</body>
+
+</html>
